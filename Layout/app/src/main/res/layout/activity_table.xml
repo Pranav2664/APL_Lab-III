@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:stretchColumns="1">
+
+    <!-- Header Row -->
+    <TableRow
+        android:background="#E0E0E0"
+        android:padding="8dp">
+
+        <TextView
+            android:text="Name"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:text="Age"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="8dp" />
+    </TableRow>
+
+    <!-- Row 1 -->
+    <TableRow android:padding="8dp">
+        <TextView
+            android:text="Aniket"
+            android:textSize="16sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:text="21"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="8dp" />
+    </TableRow>
+
+    <!-- Row 2 -->
+    <TableRow android:padding="8dp">
+        <TextView
+            android:text="Shrutika"
+            android:textSize="16sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:text="23"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="8dp" />
+    </TableRow>
+
+    <!-- Row 3 -->
+    <TableRow android:padding="8dp">
+        <TextView
+            android:text="Prerna"
+            android:textSize="16sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:text="22"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="8dp" />
+    </TableRow>
+
+</TableLayout>
