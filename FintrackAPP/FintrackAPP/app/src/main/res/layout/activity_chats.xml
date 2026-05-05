@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chats"
+    android:background="#121212"
+    android:id="@+id/ai">
+
+    <!-- Top Navigation Area -->
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI Financial Advisor"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppinsregular"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fb_helpline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/help"
+            app:fabSize="mini"
+            app:backgroundTint="#333333"
+            app:tint="@color/white" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bar"
+        android:layout_above="@id/bottom_layout"
+        android:padding="8dp"
+        android:clipToPadding="false"/>
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/poppinsregular"
+        android:gravity="center"
+        android:text="How can I help you\nwith your finances today?"
+        android:textColor="#666666"
+        android:textSize="22sp" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="12dp"
+        android:background="#1E1E1E">
+
+        <EditText
+            android:id="@+id/message_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/send_btn"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#2C2C2C"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="Type your message..."
+            android:padding="14dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#555555"
+            android:textSize="16sp"
+            android:inputType="textCapSentences"/>
+
+        <ImageButton
+            android:id="@+id/send_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/baseline_send_24"
+            app:tint="#2196F3" />
+    </RelativeLayout>
+
+</RelativeLayout>
